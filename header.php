@@ -33,13 +33,15 @@
 				<?php Benlumia007\Backdrop\Site\display_site_title(); ?>
 				<?php Benlumia007\Backdrop\Site\display_site_description(); ?>
 			</div>
-            <div class="author-description">
-                <?php
-                    if ( have_posts() ) :
-                        while ( have_posts() ) : the_post();
-                            the_author_meta( 'user_description' );
-                        endwhile;
-                    endif;
-                ?>
-            </div>
+			<?php if ( is_front_page() ) { ?>
+				<div class="author-description">
+					<?php
+						if ( have_posts() ) :
+							while ( have_posts() ) : the_post();
+								the_author_meta( 'user_description' );
+							endwhile;
+						endif;
+					?>
+				</div>
+			<?php } ?>
 		</header>
