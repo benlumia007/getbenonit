@@ -17,4 +17,4 @@ jobs:
       - name: step four
         run: npm run build
       - name: step five
-        run: rsync -r getbenonit/* /public_html
+        run: rsync -r getbenonit/* ~/public_html
