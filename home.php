@@ -17,6 +17,31 @@
 
 			<?php endforeach ?>
 
+			<div class="portfolio">
+			<?php
+
+			$posts = new Benlumia007\Alembic\Entry\Entries(
+				new Benlumia007\Alembic\Entry\Locator(
+					Benlumia007\Alembic\ContentTypes::get( 'portfolio' )->path()
+				),
+				[
+					'order' => 'desc',
+					'number' => PHP_INT_MAX
+				]
+			); ?>
+
+			<header class="entry-header">
+				<h1 class="entry-title">Portfolio</h1>
+			</header>
+
+			<div class="items">
+				<?php foreach ( $posts->all() as $post ) : ?>
+					<div class="item">
+						<?php printf( e( $post->title() ) ); ?>
+					</div>
+				<?php endforeach; ?>
+			</div>
+
 			<?php Benlumia007\Alembic\Engine::view( 'public/views/pagination', [], $data )->display() ?>
 		</div>
 	</section>

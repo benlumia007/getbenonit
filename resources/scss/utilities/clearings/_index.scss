@@ -1,0 +1,26 @@
+.site-container:before,
+.site-container:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.content-area:before,
+.content-area:after,
+.page:before,
+.page:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.portfolio {
+    .entry-header {
+        text-align: center;
+    }
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.125rem;
+}

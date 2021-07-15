@@ -37,12 +37,3 @@
 		}
 	}
 }
-
-.site-container:before,
-.site-container:after,
-.site-header:before,
-.site-header:after {
-	clear: both;
-	content: "";
-	display: table;
-}
