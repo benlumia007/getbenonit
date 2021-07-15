@@ -1,0 +1,28 @@
+{
+	"name": "getbenonit",
+	"version": "1.0.0",
+	"description": "getbenonit is a custom flat content manage system based alembic core.",
+	"main": "resources/assets/js/app.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/benlumia007/getbenonit.git"
+	},
+	"author": "Benjamin Lu",
+	"license": "GPL-2.0+",
+	"bugs": {
+		"url": "https://github.com/benlumia007/getbenonit/issues"
+	},
+	"homepage": "https://github.com/benlumia007/getbenonit#readme",
+	"scripts": {
+		"build": "npm run prod && npm run export",
+		"watch": "mix watch",
+		"prod": "mix --production",
+		"export": "mix --mix-config=webpack.mix.export.js"
+	},
+	"devDependencies": {
+		"laravel-mix": "^6.0.25",
+		"postcss-preset-env": "^6.7.0",
+		"sass": "^1.35.2",
+		"sass-loader": "^12.1.0"
+	}
+}
