@@ -1,1 +1,187 @@
+body {
+  font-family: "Merriweather", serif;
+  font-family: var(--font-family-primary, "Merriweather", serif);
+  margin: 0;
+}
 
+h1 {
+  display: block;
+  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family-heading, "Fira Sans", sans-serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0.67em 0;
+}
+
+h2 {
+  display: block;
+  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family-heading, "Fira Sans", sans-serif);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.83em 0;
+}
+
+h3 {
+  display: block;
+  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family-heading, "Fira Sans", sans-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1em 0;
+}
+
+h4 {
+  display: block;
+  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family-heading, "Fira Sans", sans-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 1.33em 0;
+}
+
+h5 {
+  display: block;
+  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family-heading, "Fira Sans", sans-serif);
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 1.67em 0;
+}
+
+h6 {
+  display: block;
+  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family-heading, "Fira Sans", sans-serif);
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 2.33em 0;
+}
+
+.site-header {
+  background: #000000;
+  background: var(--black, #000000);
+}
+.site-header.header-image {
+  background: url("../../../../user/media/header-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.site-header .site-branding {
+  padding: 8rem 0;
+  text-align: center;
+}
+.site-header .site-branding .site-title,
+.site-header .site-branding .site-description {
+  margin: 0;
+  padding: 0;
+}
+.site-header .site-branding .site-title {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0.5rem;
+}
+.site-header .site-branding .site-title a {
+  border-bottom: none;
+  color: #ffffff;
+  color: var(--white, #ffffff);
+  text-decoration: none;
+}
+.site-header .site-branding .site-description {
+  color: #ffffff;
+  color: var(--white, #ffffff);
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.site-container:before,
+.site-container:after,
+.site-header:before,
+.site-header:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.menu-primary {
+  background: #000000;
+  background: var(--black, #000000);
+}
+.menu-primary .menu-toggle {
+  display: none;
+}
+.menu-primary .menu-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.menu-primary .menu-items .menu-item {
+  display: inline-block;
+  padding: 1rem;
+}
+.menu-primary .menu-items .menu-item a {
+  border-bottom: none;
+  color: #ffffff;
+  color: var(--white, #ffffff);
+}
+
+.site-content {
+  padding-top: 3rem;
+}
+.site-content .content-area {
+  line-height: 2rem;
+  margin: 0 auto;
+  max-width: 43.75rem;
+}
+.site-content .content-area .post {
+  margin-bottom: 5rem;
+}
+.site-content .content-area .post .entry-header {
+  text-align: center;
+}
+.site-content .content-area .post .entry-header .entry-title {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+}
+.site-content .content-area .post .entry-header .entry-title a {
+  border-bottom: none;
+  color: #000000;
+  color: var(--black, #000000);
+}
+.site-content .content-area .post .entry-header .entry-metadata .entry-author {
+  font-style: italic;
+}
+.site-content .content-area .post .entry-header .entry-metadata .entry-author svg {
+  height: 1rem;
+  width: 1rem;
+  padding-right: 0.2rem;
+}
+.site-content .content-area .post .entry-header .entry-metadata .entry-date {
+  font-style: italic;
+}
+.site-content .content-area .post .entry-header .entry-metadata .entry-date svg {
+  height: 1rem;
+  width: 1rem;
+  padding: 0 0.2rem 0 0.5rem;
+}
+.site-content .content-area .post .entry-content .entry-anchor {
+  font-style: italic;
+  font-family: "Merriweather", serif;
+  font-family: var(--font-family-primary, "Merriweather", serif);
+  margin-left: -2.5rem;
+  margin-right: 1.25rem;
+}
+.site-content .content-area .page .entry-header {
+  text-align: center;
+}
+.site-content .content-area .page .entry-header .entry-title {
+  margin: 0;
+  padding: 0;
+}
+.site-content .content-area .page .entry-content .entry-anchor {
+  font-style: italic;
+  margin-left: -2.5rem;
+  margin-right: 1.25rem;
+}

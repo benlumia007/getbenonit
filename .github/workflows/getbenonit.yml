@@ -1,0 +1,18 @@
+name: getbenonit
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: step one
+        uses: actions/checkout@v2
+      - name: step two
+        run: composer install
+      - name: step three
+        run: npm install
+      - name: step four
+        run: npm run build

@@ -38,17 +38,15 @@
     </head>
 <body>
 <section id="container" class="site-container">
-	<header id="header" class="site-header">
-		<div class="branding-navigation">
-			<div class="site-branding">
-				<h1 class="site-title"><a href="<?= e( uri() ) ?>"><?= e( site_title() ); ?></a></h1>
-				<h3 class="site-description"><?= e( site_tagline() ); ?></h3>
-			</div>
-			<nav id="primary" class="menu-primary">
-				<button class="menu-toggle" aria-conrol="primary-menu" aria-expanded="false"><?= e( 'Menu' ); ?></button>
-				<ul class="menu-items">
-					<?php e( primary_menu() ); ?>
-				</ul>
-			</nav>
+<nav id="primary" class="menu-primary">
+	<button class="menu-toggle" aria-conrol="primary-menu" aria-expanded="false"><?= e( 'Menu' ); ?></button>
+	<ul class="menu-items">
+		<?php e( primary_menu() ); ?>
+	</ul>
+</nav>
+	<header id="header" class="site-header header-image">
+		<div class="site-branding">
+			<h1 class="site-title"><a href="<?= e( uri() ) ?>"><?= e( site_title() ); ?></a></h1>
+			<h3 class="site-description"><?= e( site_tagline() ); ?></h3>
 		</div>
 	</header>
