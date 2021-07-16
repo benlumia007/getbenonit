@@ -130,6 +130,37 @@ figure {
   color: var(--white, #ffffff);
 }
 
+.site-about {
+  background: #f0f0f0;
+}
+.site-about .content-area {
+  line-height: 2rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+  max-width: 60rem;
+}
+.site-about .content-area .page .entry-header {
+  text-align: center;
+}
+.site-about .content-area .page .entry-header .entry-title {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+}
+
+.site-portfolio .content-area {
+  line-height: 2rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+  max-width: 60rem;
+}
+.site-portfolio .content-area .page .entry-header {
+  text-align: center;
+}
+.site-portfolio .content-area .page .entry-header .entry-title {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+}
+
 .site-content {
   padding-top: 3rem;
 }
