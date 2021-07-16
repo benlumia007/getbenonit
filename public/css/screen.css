@@ -271,3 +271,12 @@ figure {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1.125rem;
 }
+
+.caption {
+  background: #cccccc;
+  text-align: center;
+}
+.caption .caption-text {
+  margin: 0;
+  padding: 0;
+}
