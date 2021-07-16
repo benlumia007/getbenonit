@@ -39,7 +39,16 @@
 			<div class="items">
 				<?php foreach ( $posts->all() as $post ) : ?>
 					<div class="item">
+						<img src="<?php echo uri( $post->meta( 'thumbnail' ) ); ?>" />
 						<?php printf( e( $post->title() ) ); ?>
+
+						<?php if ( $post->terms( 'category' ) ) : ?>
+							<div class="caption">
+								<?php foreach ( $post->terms( 'category' ) as $term ) : ?>
+								<span class="caption-term"><?= e( $term->title() ) ?></span>
+							</div>
+						<?php endforeach ?>
+		<?php endif ?>
 					</div>
 				<?php endforeach; ?>
 			</div>
