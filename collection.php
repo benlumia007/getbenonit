@@ -1,7 +1,7 @@
 <?php Benlumia007\Alembic\Engine::view( 'header', [], [ 'title' => $title ] )->display() ?>
-<section id="content" class="site-content">
-		<div id="main" class="content-area">
-            <article class="post">
+    <section id="content" class="site-portfolio">
+        <div id="main" class="content-area">
+            <article class="page">
             <?php if ( isset( $query ) ) : ?>
                 <header class="entry-header">
                     <h1 class="entry-title"><?= e( $query->title() ) ?></h1>
@@ -13,29 +13,25 @@
                 <?php endif; ?>
             <?php endif ?>
             </article>
-		</div>
-	</section>
-
-<div class="app-content border-box overflow-hidden relative max-w-full mx-auto pt-16 text-xl leading-loose">
-    <main class="app-main mx-auto mb-12 border-box">
-
-        <div class="collection-list o-content-width mt-8">
-
-            <ul>
-
-                <?php foreach ( $entries->all() as $entry ) : ?>
-
-                    <li><a href="<?= $entry->uri() ?>"><?= $entry->title() ?></a></li>
-
-                <?php endforeach ?>
-
-            </ul>
-
+            <div class="entry-content">
+                <div class="grid has-3-columns">
+                    <?php foreach ( $entries->all() as $post ) : ?>
+                        <div class="item">
+                            <img src="<?php echo uri( $post->meta( 'thumbnail' ) ); ?>" />
+                            
+                            <?php if ( $post->terms( 'category' ) ) : ?>
+                                <div class="caption">
+                                    <?php foreach ( $post->terms( 'category' ) as $term ) : ?>
+                                    <a href="<?= $post->uri() ?>"><h3 class="caption-text"><?php printf( e( $post->title() ) ); ?></h3></a>
+                                    <span class="caption-term"><?= e( $term->title() ) ?></span>
+                                </div>
+                                <?php endforeach ?>
+                            <?php endif ?>
+                        </div>
+                    <?php endforeach; ?>
+                    <?php Benlumia007\Alembic\Engine::view( 'public/views/pagination', [], $data )->display() ?>
+                </div>
+            </div>
         </div>
-
-        <?php Benlumia007\Alembic\Engine::view( 'public/views/pagination', [], $data )->display() ?>
-
-    </main>
-</div>
-
+    </section>
 <?php Benlumia007\Alembic\Engine::view( 'footer' )->display() ?>
