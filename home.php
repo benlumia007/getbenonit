@@ -22,7 +22,7 @@
 	<div class="content-area">
 		<div class="page">
 			<?php
-			$posts = new Benlumia007\Alembic\Entry\Entries(
+			$portfolios = new Benlumia007\Alembic\Entry\Entries(
 				new Benlumia007\Alembic\Entry\Locator(
 					Benlumia007\Alembic\ContentTypes::get( 'portfolio' )->path()
 				),
@@ -39,8 +39,47 @@
 
 			<div class="entry-content">
 				<div class="items">
+					<?php foreach ( $portfolios->all() as $portfolio ) : ?>
+						<div class="item">
+							<img src="<?php echo uri( $portfolio->meta( 'thumbnail' ) ); ?>" />
+							
+							<?php if ( $portfolio->terms( 'category' ) ) : ?>
+								<div class="caption">
+									<?php foreach ( $portfolio->terms( 'category' ) as $term ) : ?>
+									<a href="<?= $portfolio->uri() ?>"><h3 class="caption-text"><?php printf( e( $portfolio->title() ) ); ?></h3></a>
+									<span class="caption-term"><?= e( $term->title() ) ?></span>
+								</div>
+								<?php endforeach ?>
+							<?php endif ?>
+						</div>
+					<?php endforeach; ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="blog" class="site-blog">
+	<div class="content-area">
+		<div class="page">
+			<?php
+			$posts = new Benlumia007\Alembic\Entry\Entries(
+				new Benlumia007\Alembic\Entry\Locator(
+					Benlumia007\Alembic\ContentTypes::get( 'post' )->path()
+				),
+				[
+					'order' => 'desc',
+					'number' => PHP_INT_MAX
+				]
+			); ?>
+			<header class="entry-header">
+				<h1 class="entry-title">Blog</h1>
+				<span>Latest News</span>
+			</header>
+			<div class="entry-content">
+				<div class="items">
 					<?php foreach ( $posts->all() as $post ) : ?>
 						<div class="item">
+							<h1 class=""><?= $post->title(); ?>
 							<img src="<?php echo uri( $post->meta( 'thumbnail' ) ); ?>" />
 							
 							<?php if ( $post->terms( 'category' ) ) : ?>

@@ -166,6 +166,23 @@ figure {
   margin: 2rem 0;
 }
 
+.site-blog {
+  background: #f0f0f0;
+}
+.site-blog .content-area {
+  line-height: 2rem;
+  margin: 0 auto;
+  padding: 3rem 0;
+  max-width: 73.125rem;
+}
+.site-blog .content-area .page .entry-header {
+  text-align: center;
+}
+.site-blog .content-area .page .entry-header .entry-title {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+}
+
 .site-content {
   padding-top: 3rem;
 }
@@ -223,6 +240,17 @@ figure {
   font-style: italic;
   margin-left: -2.5rem;
   margin-right: 1.25rem;
+}
+
+.site-footer {
+  background: #000000;
+  background: var(--black, #000000);
+  padding: 1.25rem;
+  text-align: center;
+}
+.site-footer .site-info {
+  color: #ffffff;
+  color: var(--white, #ffffff);
 }
 
 .alignleft {

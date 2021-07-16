@@ -1,9 +1,17 @@
 {
-	"2021-01-02.silver-quantum.md": [],
-	"2021-02-01.white-spektrum.md": [],
+	"2021-01-02.silver-quantum.md": {
+		"category": [
+			"wordpress-theme"
+		]
+	},
+	"2021-02-01.white-spektrum.md": {
+		"category": [
+			"wordpress-theme"
+		]
+	},
 	"2021-03-01.azul-silver.md": {
 		"category": [
-			"wordpress"
+			"wordpress-theme"
 		]
 	}
 }

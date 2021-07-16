@@ -44,6 +44,28 @@
 	}	
 }
 
+.site-blog {
+	background: #f0f0f0;
+
+	.content-area {
+		line-height: 2rem;
+		margin: 0 auto;
+		padding: 3rem 0;
+		max-width: 73.125rem;
+
+		.page {
+			.entry-header {
+				text-align: center;
+
+				.entry-title {
+					margin: 0 0 0.5rem 0;
+					padding: 0;
+				}
+			}
+		}
+	}
+}
+
 
 
 .site-content {
