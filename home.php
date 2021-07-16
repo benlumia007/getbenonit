@@ -38,7 +38,7 @@
 			</header>
 
 			<div class="entry-content">
-				<div class="items">
+				<div class="has-3-columns">
 					<?php foreach ( $portfolios->all() as $portfolio ) : ?>
 						<div class="item">
 							<img src="<?php echo uri( $portfolio->meta( 'thumbnail' ) ); ?>" />
@@ -76,7 +76,7 @@
 				<span>Latest News</span>
 			</header>
 			<div class="entry-content">
-				<div class="items">
+				<div class="grid has-2-columns">
 					<?php foreach ( $posts->all() as $post ) : ?>
 						<div class="item">
 							<h1 class=""><?= $post->title(); ?>

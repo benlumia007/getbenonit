@@ -297,9 +297,15 @@ figure {
   text-align: center;
 }
 
-.items {
+.has-3-columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.125rem;
+}
+
+.has-2-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 1.125rem;
 }
 
