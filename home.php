@@ -34,23 +34,26 @@
 
 			<header class="entry-header">
 				<h1 class="entry-title">Portfolio</h1>
+				<span>Some of my recent works.</span>
 			</header>
 
-			<div class="items">
-				<?php foreach ( $posts->all() as $post ) : ?>
-					<div class="item">
-						<img src="<?php echo uri( $post->meta( 'thumbnail' ) ); ?>" />
-						
-						<?php if ( $post->terms( 'category' ) ) : ?>
-							<div class="caption">
-								<?php foreach ( $post->terms( 'category' ) as $term ) : ?>
-								<h3 class="caption-text"><?php printf( e( $post->title() ) ); ?></h3>
-								<span class="caption-term"><?= e( $term->title() ) ?></span>
-							</div>
-						<?php endforeach ?>
-		<?php endif ?>
-					</div>
-				<?php endforeach; ?>
+			<div class="entry-content">
+				<div class="items">
+					<?php foreach ( $posts->all() as $post ) : ?>
+						<div class="item">
+							<img src="<?php echo uri( $post->meta( 'thumbnail' ) ); ?>" />
+							
+							<?php if ( $post->terms( 'category' ) ) : ?>
+								<div class="caption">
+									<?php foreach ( $post->terms( 'category' ) as $term ) : ?>
+									<a href="<?= $post->uri() ?>"><h3 class="caption-text"><?php printf( e( $post->title() ) ); ?></h3></a>
+									<span class="caption-term"><?= e( $term->title() ) ?></span>
+								</div>
+								<?php endforeach ?>
+							<?php endif ?>
+						</div>
+					<?php endforeach; ?>
+				</div>
 			</div>
 		</div>
 	</div>
