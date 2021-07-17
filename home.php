@@ -79,8 +79,10 @@
 				<div class="grid has-2-columns">
 					<?php foreach ( $posts->all() as $post ) : ?>
 						<div class="item">
+							<figure class="post-thumbnail">
+								<img src="<?php echo uri( $post->meta( 'thumbnail' ) ); ?>" />
+							</figure>
 							<h1 class=""><?= $post->title(); ?>
-							<img src="<?php echo uri( $post->meta( 'thumbnail' ) ); ?>" />
 							
 							<?php if ( $post->terms( 'category' ) ) : ?>
 								<div class="caption">
