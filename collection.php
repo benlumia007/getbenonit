@@ -1,3 +1,13 @@
+<?php
+/**
+ * Getbenonit ( collection.php )
+ *
+ * @package   Getbenonit
+ * @copyright Copyright (C) 2014-2021. Benjamin Lu
+ * @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+ * @author    Benjamin Lu ( https://getbenonit.com )
+ */
+?>
 <?php Benlumia007\Alembic\Engine::view( 'header', [], [ 'title' => $title ] )->display() ?>
     <section id="content" class="site-portfolio">
         <div id="main" class="content-area">

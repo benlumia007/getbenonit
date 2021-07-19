@@ -1,11 +1,11 @@
 <?php
 /**
- * Benjlu ( header.php )
+ * Getbenonit ( header.php )
  *
- * @package   Benjlu
- * @copyright Copyright (C) 2021. Sex
+ * @package   Getbenonit
+ * @copyright Copyright (C) 2014-2021. Benjamin Lu
  * @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
- * @author    Sex ( https://getbenonit.com )
+ * @author    Benjamin Lu ( https://getbenonit.com )
  */
 ?>
 <!doctype html>
