@@ -1,3 +1,13 @@
+<?php
+/**
+ * Getbenonit ( content.php )
+ *
+ * @package   GetBenOnit
+ * @copyright Copyright (C) 2021. Benjamin Lu
+ * @license   GNU General Public License v2 or later ( https://www.gnu.org/licenses/gpl-2.0.html )
+ * @author    Benjamin Lu ( https://getbenonit.com )
+ */
+?>
 <?php $format = $entry->meta( 'format' ); ?>
 
 <article class="post post-format-<?= $format ? e( $format ) : 'standard' ?>">
