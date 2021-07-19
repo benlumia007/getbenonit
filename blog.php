@@ -8,7 +8,7 @@
  * @author    Benjamin Lu ( https://getbenonit.com )
  */
 ?>
-<?php Benlumia007\Alembic\Engine::view( 'header-blog', [], [ 'title' => ! empty( $title ) ? $title : '' ] )->display() ?>
+<?php Benlumia007\Alembic\Engine::view( 'header', [], [ 'title' => ! empty( $title ) ? $title : '' ] )->display() ?>
 	<section id="content" class="site-content">
 		<div id="main" class="content-area">
 			<?php foreach ( $entries->all() as $entry ) : ?>
