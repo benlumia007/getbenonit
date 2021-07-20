@@ -134,7 +134,7 @@ figure {
 
 .site-content .right-sidebar {
   margin: 0 auto;
-  padding: 3rem 0;
+  padding: 2rem 0;
   max-width: 73.125rem;
 }
 .site-content .right-sidebar .content-area {
@@ -167,9 +167,52 @@ figure {
   width: 1rem;
   padding: 0 0.2rem 0 0.5rem;
 }
+.site-content .right-sidebar .content-area .post .post-thumbnail {
+  margin: 1rem 0;
+}
 .site-content .right-sidebar .sidebar-area {
   float: right;
   width: 29.2307692308%;
+}
+.site-content .right-sidebar .sidebar-area .categories {
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+}
+.site-content .right-sidebar .sidebar-area .categories .categories-title {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+}
+.site-content .right-sidebar .sidebar-area .categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.site-content .right-sidebar .sidebar-area .archives {
+  line-height: 1.8rem;
+}
+.site-content .right-sidebar .sidebar-area .archives .archives-title {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+}
+.site-content .right-sidebar .sidebar-area .archives ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.site-content .no-sidebar {
+  margin: 0 auto;
+  padding: 2rem 0;
+  max-width: 73.125rem;
+}
+.site-content .no-sidebar .content-area .entry-header {
+  text-align: center;
+}
+.site-content .no-sidebar .content-area .entry-header .entry-title {
+  margin: 0;
+  padding: 0;
+}
+.site-content .no-sidebar .content-area .entry-content {
+  margin: 2rem 0;
 }
 
 .site-footer {
