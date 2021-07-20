@@ -29,9 +29,9 @@
                         <div class="item">
                             <img src="<?php echo uri( $post->meta( 'thumbnail' ) ); ?>" />
                             
-                            <?php if ( $post->terms( 'category' ) ) : ?>
+                            <?php if ( $post->terms( 'tag' ) ) : ?>
                                 <div class="caption">
-                                    <?php foreach ( $post->terms( 'category' ) as $term ) : ?>
+                                    <?php foreach ( $post->terms( 'tag' ) as $term ) : ?>
                                     <a href="<?= $post->uri() ?>"><h3 class="caption-text"><?php printf( e( $post->title() ) ); ?></h3></a>
                                     <span class="caption-term"><?= e( $term->title() ) ?></span>
                                 </div>

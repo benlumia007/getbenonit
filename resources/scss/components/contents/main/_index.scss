@@ -1,38 +1,36 @@
 .site-content {
-	padding-top: 3rem;
-
-	.content-area {
-		line-height: 2rem;
+	.right-sidebar {
 		margin: 0 auto;
-		max-width: 50rem;
-	
-		.post {
-			margin-bottom: 5rem;
+		padding: 3rem 0;
+		max-width: 73.125rem;
 
-			.entry-header {
-				text-align: center;
-	
-				.entry-title {
-					margin: 0 0 0.5rem 0;
-					padding: 0;
+		.content-area {
+			float: left;
+			width: 69.230769230769231%;
 
-					a {
-						border-bottom: none;
-						color: color( black );
+			.post {
+				margin-bottom: 3rem;
+				
+				.entry-header {
+					text-align: center;
+
+					.entry-title {
+						margin: 0;
+						padding: 0;
 					}
 				}
 
 				.entry-metadata {
 					.entry-author {
 						font-style: italic;
-
+	
 						svg {
 							height: 1rem;
 							width: 1rem;
 							padding-right: 0.2rem;
 						}
 					}
-
+	
 					.entry-date {
 						font-style: italic;
 						
@@ -45,33 +43,12 @@
 				}
 			}
 
-			.entry-content {
-				.entry-anchor {
-					font-style: italic;
-					font-family: font-family( primary );
-					margin-left: -2.5rem;
-					margin-right: 1.250rem;
-				}
-			}
+
 		}
 
-		.page {
-			.entry-header {
-				text-align: center;
-
-				.entry-title {
-					margin: 0;
-					padding: 0;
-				}
-			}
-
-			.entry-content {
-				.entry-anchor {
-					font-style: italic;
-					margin-left: -2.5rem;
-					margin-right: 1.250rem;
-				}
-			}
+		.sidebar-area {
+			float: right;
+			width: 29.230769230769231%;
 		}
 	}
 }

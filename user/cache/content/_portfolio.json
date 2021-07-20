@@ -1,22 +1,30 @@
 {
 	"2014-04-19.silver-quantum.md": {
 		"category": [
-			"wordpress-theme"
+			"one-column"
 		]
 	},
 	"2014-05-29.white-spektrum.md": {
 		"category": [
-			"wordpress-theme"
+			"one-column"
 		]
 	},
 	"2015-03-02.azul-silver.md": {
 		"category": [
-			"wordpress-theme"
+			"one-column"
 		]
 	},
 	"2015-05-04.barista.md": {
 		"category": [
-			"one-column"
+			"blog",
+			"custom-header",
+			"custom-menu",
+			"left-sidebar",
+			"one-column",
+			"right-sidebar",
+			"sticky-post",
+			"threaded-comments",
+			"translation-ready"
 		]
 	},
 	"_index.md": []

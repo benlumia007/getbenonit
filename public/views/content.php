@@ -31,7 +31,7 @@
 
 	<?php endif ?>
 
-	<figure class="post-thumbnail alignwide">
+	<figure class="post-thumbnail">
 		<img src="<?php echo uri( $entry->meta( 'thumbnail' ) ); ?>" />
 	</figure>
 

@@ -132,129 +132,44 @@ figure {
   color: var(--white, #ffffff);
 }
 
-.site-content {
-  padding-top: 3rem;
-}
-.site-content .content-area {
-  line-height: 2rem;
+.site-content .right-sidebar {
   margin: 0 auto;
-  max-width: 50rem;
+  padding: 3rem 0;
+  max-width: 73.125rem;
 }
-.site-content .content-area .post {
-  margin-bottom: 5rem;
+.site-content .right-sidebar .content-area {
+  float: left;
+  width: 69.2307692308%;
 }
-.site-content .content-area .post .entry-header {
+.site-content .right-sidebar .content-area .post {
+  margin-bottom: 3rem;
+}
+.site-content .right-sidebar .content-area .post .entry-header {
   text-align: center;
 }
-.site-content .content-area .post .entry-header .entry-title {
-  margin: 0 0 0.5rem 0;
+.site-content .right-sidebar .content-area .post .entry-header .entry-title {
+  margin: 0;
   padding: 0;
 }
-.site-content .content-area .post .entry-header .entry-title a {
-  border-bottom: none;
-  color: #000000;
-  color: var(--black, #000000);
-}
-.site-content .content-area .post .entry-header .entry-metadata .entry-author {
+.site-content .right-sidebar .content-area .post .entry-metadata .entry-author {
   font-style: italic;
 }
-.site-content .content-area .post .entry-header .entry-metadata .entry-author svg {
+.site-content .right-sidebar .content-area .post .entry-metadata .entry-author svg {
   height: 1rem;
   width: 1rem;
   padding-right: 0.2rem;
 }
-.site-content .content-area .post .entry-header .entry-metadata .entry-date {
+.site-content .right-sidebar .content-area .post .entry-metadata .entry-date {
   font-style: italic;
 }
-.site-content .content-area .post .entry-header .entry-metadata .entry-date svg {
+.site-content .right-sidebar .content-area .post .entry-metadata .entry-date svg {
   height: 1rem;
   width: 1rem;
   padding: 0 0.2rem 0 0.5rem;
 }
-.site-content .content-area .post .entry-content .entry-anchor {
-  font-style: italic;
-  font-family: "Merriweather", serif;
-  font-family: var(--font-family-primary, "Merriweather", serif);
-  margin-left: -2.5rem;
-  margin-right: 1.25rem;
-}
-.site-content .content-area .page .entry-header {
-  text-align: center;
-}
-.site-content .content-area .page .entry-header .entry-title {
-  margin: 0;
-  padding: 0;
-}
-.site-content .content-area .page .entry-content .entry-anchor {
-  font-style: italic;
-  margin-left: -2.5rem;
-  margin-right: 1.25rem;
-}
-
-.home .about {
-  background: #f0f0f0;
-}
-.home .about .content-area {
-  line-height: 2rem;
-  margin: 0 auto;
-  padding: 3rem 0;
-  max-width: 73.125rem;
-}
-.home .about .content-area .entry-header {
-  text-align: center;
-}
-.home .about .content-area .entry-header .entry-title {
-  margin: 0;
-  padding: 0;
-}
-.home .about .content-area .entry-content .post-thumbnail img {
-  box-shadow: 0px 0px 10px black;
-}
-.home .portfolio .content-area {
-  line-height: 2rem;
-  margin: 0 auto;
-  padding: 3rem 0;
-  max-width: 73.125rem;
-}
-.home .portfolio .content-area .entry-header {
-  text-align: center;
-}
-.home .portfolio .content-area .entry-header .entry-title {
-  margin: 0;
-  padding: 0;
-}
-.home .portfolio .content-area .entry-content {
-  margin: 2rem 0;
-}
-.home .blog {
-  background: #f0f0f0;
-}
-.home .blog .content-area {
-  line-height: 2rem;
-  margin: 0 auto;
-  padding: 3rem 0;
-  max-width: 73.125rem;
-}
-.home .blog .content-area .entry-header {
-  text-align: center;
-}
-.home .blog .content-area .entry-header .entry-title {
-  margin: 0;
-  padding: 0;
-}
-.home .blog .content-area .entry-content {
-  margin: 2rem 0;
-}
-.home .blog .content-area .entry-content .post-thumbnail img {
-  box-shadow: 0px 0px 10px black;
-}
-.home .blog .blog-header {
-  text-align: center;
-}
-.home .blog .blog-header .blog-title {
-  font-size: 1.8rem;
-  margin: 0;
-  padding: 0;
+.site-content .right-sidebar .sidebar-area {
+  float: right;
+  width: 29.2307692308%;
 }
 
 .site-footer {

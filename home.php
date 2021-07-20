@@ -9,14 +9,14 @@
  */
 ?>
 <?php Benlumia007\Alembic\Engine::view( 'header', [], [ 'title' => ! empty( $title ) ? $title : '' ] )->display() ?>
-<section id="about" class="about">
+<section id="about" class="site-about">
 	<div class="content-area">
 		<?php foreach ( $entries->all() as $entry ) : ?>
 			<?php Benlumia007\Alembic\Engine::view( 'public/views/content', [ $entry->type()->name() ], [ 'entry' => $entry ] )->display() ?>
 		<?php endforeach ?>
 	</div>
 </section>
-<section id="portfolio" class="portfolio">
+<section id="portfolio" class="site-portfolio">
 	<div class="content-area">
 		<?php
 		$portfolios = new Benlumia007\Alembic\Entry\Entries(
@@ -54,7 +54,7 @@
 		</div>
 	</div>
 </section>
-<section id="blog" class="blog">
+<section id="blog" class="site-blog">
 	<div class="content-area">
 		<?php
 		$posts = new Benlumia007\Alembic\Entry\Entries(
