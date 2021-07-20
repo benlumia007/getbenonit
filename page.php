@@ -9,11 +9,16 @@
  */
 ?>
 <?php Benlumia007\Alembic\Engine::view( 'header', [], [ 'title' => $title, 'query' => ! empty( $query ) ? $query : false ] )->display() ?>
-	<section id="content" class="site-content">
-		<div id="main" class="content-area">
-			<?php foreach ( $entries->all() as $entry ) : ?>
-			<?php Benlumia007\Alembic\Engine::view( 'public/views/content-page', [ $entry->type()->name() ], [ 'entry' => $entry ] )->display() ?>
-			<?php endforeach ?>
+<section id="content" class="site-content">
+		<div id="layout" class="right-sidebar">
+			<main id="main" class="content-area">
+				<?php foreach ( $entries->all() as $entry ) : ?>
+					<?php Benlumia007\Alembic\Engine::view( 'public/views/content-page', [ $entry->type()->name() ], [ 'entry' => $entry ] )->display() ?>
+				<?php endforeach ?>
+			</main>
+			<aside id="aside" class="sidebar-area">
+			
+			</aside>
 		</div>
 	</section>
 <?php Benlumia007\Alembic\Engine::view( 'footer' )->display() ?>
