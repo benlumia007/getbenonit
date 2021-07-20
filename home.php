@@ -84,7 +84,7 @@
 							<?= $post->author()->title(); ?>
 						</div>
 						<div class="blog-content">
-							<?= $post->content(); ?>
+							<?= $post->excerpt(); ?>
 						</div>
 					</div>
 				<?php endforeach; ?>
