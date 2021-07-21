@@ -14,18 +14,6 @@
 			"one-column"
 		]
 	},
-	"2015-05-04.barista.md": {
-		"category": [
-			"blog",
-			"custom-header",
-			"custom-menu",
-			"left-sidebar",
-			"one-column",
-			"right-sidebar",
-			"sticky-post",
-			"threaded-comments",
-			"translation-ready"
-		]
-	},
+	"2015-05-04.barista.md": [],
 	"_index.md": []
 }

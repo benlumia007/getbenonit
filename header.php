@@ -39,10 +39,20 @@
 <body class="home">
 <section id="container" class="site-container">
 <nav id="primary" class="menu-primary">
-	<button class="menu-toggle" aria-conrol="primary-menu" aria-expanded="false"><?= e( 'Menu' ); ?></button>
+	<button class="menu-toggle" onclick="myFunction()"><?= e( 'Menu' ); ?></button>
 	<ul class="menu-items">
 		<?php e( primary_menu() ); ?>
 	</ul>
+	<script>
+  function myFunction() {
+    var x = document.getElementById("primary");
+    if (x.className === "menu-primary") {
+      x.className += " responsive";
+    } else {
+      x.className = "menu-primary";
+    }
+  }
+	</script>
 </nav>
 	<header id="header" class="site-header header-image">
 		<div class="site-branding">

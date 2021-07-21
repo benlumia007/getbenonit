@@ -11,16 +11,3 @@
 ////
 
 @import 'headings/index';
-img,
-figure {
-    margin: 0;
-    padding: 0;
-    height: auto;
-    max-width: 100%;
-}
-
-.post-thumbnail.alignleft img {
-    float: left;
-    height: 250px;
-    width: 250px;
-}

@@ -37,14 +37,15 @@ $getbenonit->routes->get( 'blog/feed', Benlumia007\Alembic\Controllers\Feed::cla
 $getbenonit->routes->get( 'blog/page/{number}', Benlumia007\Alembic\Controllers\Blog::class, 'top' );
 
 Benlumia007\Alembic\ContentTypes::add( 'category', new Benlumia007\Alembic\Entry\Types\Category( $getbenonit->routes ) );
+Benlumia007\Alembic\ContentTypes::add( 'feature', new Benlumia007\Alembic\Entry\Types\Feature( $getbenonit->routes ) );
 Benlumia007\Alembic\ContentTypes::add( 'tag', new Benlumia007\Alembic\Entry\Types\Tag( $getbenonit->routes ) );
 Benlumia007\Alembic\ContentTypes::add( 'author', new Benlumia007\Alembic\Entry\Types\Author( $getbenonit->routes ) );
 Benlumia007\Alembic\ContentTypes::add( 'post', new Benlumia007\Alembic\Entry\Types\Post( $getbenonit->routes ) );
 Benlumia007\Alembic\ContentTypes::add( 'portfolio', new Benlumia007\Alembic\Entry\Types\Portfolio( $getbenonit->routes ) );
 Benlumia007\Alembic\ContentTypes::add( 'page', new Benlumia007\Alembic\Entry\Types\Page( $getbenonit->routes ) );
 Benlumia007\Alembic\ContentTypes::registerRoutes();
-$getbenonit->routes->get( '/blog', Benlumia007\Alembic\Controllers\Blog::class );
-$getbenonit->routes->get( '/', Benlumia007\Alembic\Controllers\Home::class );
+$getbenonit->routes->get( '/', Benlumia007\Alembic\Controllers\Blog::class );
+// $getbenonit->routes->get( '/', Benlumia007\Alembic\Controllers\Home::class );
 
 if ( isset( $_GET['bust-cache'] ) ) {
 

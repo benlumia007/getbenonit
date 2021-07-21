@@ -19,16 +19,12 @@
 			</main>
 			<aside id="aside" class="sidebar-area">
 				<div class="categories">
-					<?php $categories = new Benlumia007\Alembic\Entry\Entries( new Benlumia007\Alembic\Entry\Locator( Benlumia007\Alembic\ContentTypes::get( 'post' )->path() ) ); ?>
+					<?php $categories = new Benlumia007\Alembic\Entry\Entries( new Benlumia007\Alembic\Entry\Locator( Benlumia007\Alembic\ContentTypes::get( 'category' )->path() ) ); ?>
 					<h2 class="categories-title">Categories</h2>
 					<?php foreach( $categories->all() as $category ) : ?>
-						<?php if ( $category->terms( 'category' ) ) : ?>
-							<ul>
-								<?php foreach( $category->terms( 'category' ) as $terms ) : ?>
-									<li><a href="<?= $terms->uri(); ?>"><?= $terms->title(); ?></a></li>
-								<?php endforeach; ?>
-							</ul>
-						<?php endif; ?>
+						<ul>
+							<li><a href="<?= $category->uri(); ?>"><?= $category->title(); ?></a></li>
+						</ul>
 					<?php endforeach; ?>
 				</div>
 			</aside>

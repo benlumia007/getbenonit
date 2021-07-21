@@ -7,7 +7,9 @@
 .content-area:before,
 .content-area:after,
 .page:before,
-.page:after {
+.page:after,
+.menu-primary:before,
+.menu-primary:after {
 	clear: both;
 	content: "";
 	display: table;

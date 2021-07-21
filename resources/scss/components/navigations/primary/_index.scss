@@ -1,5 +1,28 @@
+////
+/// Primary screen stylesheet.
+///
+/// This is the primary stylesheet. We don't actually write any styles here.
+/// Instead, we import all of our styles from partials within the sub-folders.
+/// This file is set up based on the Inverted Triangle CSS (ITCSS) system,
+/// which gets more specific as we drill down each layer.  This keeps your
+/// style code lean and organized.
+///
+/// The bulk of your code should be within the `/components` folder.  By
+/// default, we follow the Block-Element-Modifier (BEM) system in our HTML.
+/// Each "block" is a "component" in our CSS.
+///
+/// @group  Styles
+/// @author Justin Tadlock <justintadlock@gmail.com>
+/// @link   https://themehybrid.com/themes/mythic
+////
+
+// Imports all of the files needed for front-end output. Note that the order is
+// very specific and should typically not be changed.
+
+  
 .menu-primary {
     background: color( black );
+
 	.menu-toggle {
 		display: none;
 	}
@@ -20,4 +43,38 @@
 			}
 		}
 	}
+}
+
+
+@media screen and (max-width: 600px) {
+  .menu-primary {
+    padding: 0.5rem;
+
+    .menu-items {
+      .menu-item {
+        display: none;
+      }
+    }
+
+    .menu-toggle {
+      border: none;
+      background: white;
+      font-family: font-family( 'primary' );
+      display: block;
+      padding: 0.5rem;
+      float: right;
+    }
+    
+    &.responsive {
+      
+      .menu-items {
+        margin-top: 2.8rem;
+
+        .menu-item {
+          display: block;
+          text-align: left;
+        }
+      }
+    }
+  }
 }
