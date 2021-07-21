@@ -2,6 +2,8 @@ title: Benjamin Lu
 tagline: PHP Developer
 
 primary:
+  - title: "Blog"
+    url: "/blog"
   - title: "Portfolio"
     url:   "/portfolio"
   - title: "About Me"
