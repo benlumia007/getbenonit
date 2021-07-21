@@ -155,6 +155,9 @@ h6 {
 .content-area .post .entry-header .entry-title a {
   text-decoration: none;
 }
+.content-area .post .entry-content {
+  margin: 2rem 0;
+}
 .content-area .page {
   background: #ffffff;
   border: 0.063rem solid #cccccc;
@@ -201,6 +204,7 @@ h6 {
 .right-sidebar .sidebar-area .archives {
   background: #ffffff;
   border: 0.063rem solid #cccccc;
+  margin-bottom: 1.125rem;
   padding: 1.125rem;
 }
 .right-sidebar .sidebar-area .archives .archives-title {
@@ -213,6 +217,33 @@ h6 {
   padding: 0;
 }
 .right-sidebar .sidebar-area .archives ul li {
+  line-height: 1.8rem;
+}
+.right-sidebar .sidebar-area .theme-details {
+  background: #ffffff;
+  border: 0.063rem solid #cccccc;
+  margin-bottom: 1.125rem;
+  padding: 1.125rem;
+}
+.right-sidebar .sidebar-area .theme-details .theme-details-title {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+}
+.right-sidebar .sidebar-area .features {
+  background: #ffffff;
+  border: 0.063rem solid #cccccc;
+  padding: 1.125rem;
+}
+.right-sidebar .sidebar-area .features .features-title {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+}
+.right-sidebar .sidebar-area .features ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.right-sidebar .sidebar-area .features ul li {
   line-height: 1.8rem;
 }
 

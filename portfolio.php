@@ -16,9 +16,9 @@
 					<?php Benlumia007\Alembic\Engine::view( 'public/views/content-portfolio', [ $entry->type()->name() ], [ 'entry' => $entry ] )->display() ?>
 				<?php endforeach ?>
 				</main>
-				<aside id="aside" class="sidebar">
-					<div class="theme-detail">
-						<h2>Theme Detail</h2>
+				<aside id="aside" class="sidebar-area">
+					<div class="theme-details">
+						<h2 class="theme-details-title">Theme Detail</h2>
 						<table>
 							<tbody>
 								<tr>
@@ -36,8 +36,8 @@
 							</tbody>
 						</table>
 					</div>
-					<div class="featured">
-						<h2 class="featured-title">Features</h2>
+					<div class="features">
+						<h2 class="features-title">Features</h2>
 						<ul>
 							<?php if ( $entry->terms( 'feature' ) ) : ?>
 								<?php foreach ( $entry->terms( 'feature' ) as $term ) : ?>
