@@ -1,0 +1,32 @@
+.site-header {
+    &.header-image {
+        background: url( ../../../../user/media/header-image.jpg);
+
+        .site-branding {
+            background: color( black );
+            padding: 8rem 0;
+            text-align: center;
+            opacity: 0.5;
+
+            .site-title {
+                font-size: 3.125rem;
+                margin: 0;
+                padding: 0;
+                
+                a {
+                    color: color( white );
+                    text-decoration: none;
+                    text-shadow: 2px 2px color( navy );
+                    
+                }
+            }
+
+            .site-description {
+                color: color( white );
+                margin: 0;
+                padding: 0;
+                text-shadow: 2px 2px color( navy );
+            }
+        }
+    }
+}

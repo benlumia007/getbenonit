@@ -59,6 +59,32 @@ h6 {
   margin: 2.33em 0;
 }
 
+.site-header.header-image {
+  background: url(../../../../user/media/header-image.jpg);
+}
+.site-header.header-image .site-branding {
+  background: #000000;
+  padding: 8rem 0;
+  text-align: center;
+  opacity: 0.5;
+}
+.site-header.header-image .site-branding .site-title {
+  font-size: 3.125rem;
+  margin: 0;
+  padding: 0;
+}
+.site-header.header-image .site-branding .site-title a {
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 2px 2px #000080;
+}
+.site-header.header-image .site-branding .site-description {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-shadow: 2px 2px #000080;
+}
+
 .menu-primary {
   background: #000000;
 }
@@ -104,6 +130,92 @@ h6 {
     text-align: left;
   }
 }
+.site-content {
+  margin: 0 auto;
+  max-width: 73.125rem;
+  padding: 1.125rem;
+}
+
+.content-area {
+  line-height: 1.8rem;
+}
+.content-area .post {
+  background: #ffffff;
+  border: 0.063rem solid #cccccc;
+  margin-bottom: 1.125rem;
+  padding: 1.125rem;
+}
+.content-area .post .entry-header {
+  text-align: center;
+}
+.content-area .post .entry-header .entry-title {
+  margin: 0;
+  padding: 0;
+}
+.content-area .post .entry-header .entry-title a {
+  text-decoration: none;
+}
+.content-area .page {
+  background: #ffffff;
+  border: 0.063rem solid #cccccc;
+  margin-bottom: 1.125rem;
+  padding: 1.125rem;
+}
+.content-area .page .entry-header {
+  text-align: center;
+}
+.content-area .page .entry-header .entry-title {
+  margin: 0;
+  padding: 0;
+}
+.content-area .page .entry-header .entry-title a {
+  text-decoration: none;
+}
+
+.right-sidebar .content-area {
+  float: left;
+  width: 70.5467372134%;
+}
+.right-sidebar .sidebar-area {
+  float: right;
+  width: 28.5714285714%;
+}
+.right-sidebar .sidebar-area .categories {
+  background: #ffffff;
+  border: 0.063rem solid #cccccc;
+  margin-bottom: 1.125rem;
+  padding: 1.125rem;
+}
+.right-sidebar .sidebar-area .categories .categories-title {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+}
+.right-sidebar .sidebar-area .categories ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.right-sidebar .sidebar-area .categories ul li {
+  line-height: 1.8rem;
+}
+.right-sidebar .sidebar-area .archives {
+  background: #ffffff;
+  border: 0.063rem solid #cccccc;
+  padding: 1.125rem;
+}
+.right-sidebar .sidebar-area .archives .archives-title {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+}
+.right-sidebar .sidebar-area .archives ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.right-sidebar .sidebar-area .archives ul li {
+  line-height: 1.8rem;
+}
+
 .alignleft {
   float: left;
   margin-right: 20px;
@@ -169,4 +281,14 @@ h6 {
 .caption .caption-text {
   margin: 0;
   padding: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+figure {
+  height: auto;
+  margin: 0;
 }

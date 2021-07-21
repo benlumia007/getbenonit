@@ -39,7 +39,7 @@
 					?>
 					<h2 class="archives-title">Archives</h2>
 
-<div class="archives o-content-width mt-8">
+<div class="o-content-width mt-8">
 
 <?php foreach ( $posts->all() as $post ) : ?>
 
