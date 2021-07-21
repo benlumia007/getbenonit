@@ -247,6 +247,60 @@ h6 {
   line-height: 1.8rem;
 }
 
+.site-about {
+  padding: 1rem 0;
+}
+.site-about .content-area {
+  margin: 0 auto;
+  max-width: 73.125rem;
+}
+.site-about .content-area .page {
+  background: transparent;
+  border: none;
+}
+.site-about .content-area .page .post-thumbnail img {
+  height: 300px;
+  width: 300px;
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+.site-portfolio {
+  background: #ffffff;
+  padding: 2rem 0;
+}
+.site-portfolio .content-area {
+  margin: 0 auto;
+  max-width: 73.125rem;
+}
+.site-portfolio .content-area .entry-header {
+  text-align: center;
+}
+.site-portfolio .content-area .entry-header .entry-title {
+  margin: 0;
+  padding: 0;
+}
+.site-portfolio .content-area .entry-content {
+  margin: 2rem 0;
+}
+
+.site-blog {
+  padding: 2rem 0;
+}
+.site-blog .content-area {
+  margin: 0 auto;
+  max-width: 73.125rem;
+}
+.site-blog .content-area .entry-header {
+  text-align: center;
+}
+.site-blog .content-area .entry-header .entry-title {
+  margin: 0;
+  padding: 0;
+}
+.site-blog .content-area .entry-content {
+  margin: 2rem 0;
+}
+
 .alignleft {
   float: left;
   margin-right: 20px;

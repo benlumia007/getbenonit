@@ -44,8 +44,8 @@ Benlumia007\Alembic\ContentTypes::add( 'post', new Benlumia007\Alembic\Entry\Typ
 Benlumia007\Alembic\ContentTypes::add( 'portfolio', new Benlumia007\Alembic\Entry\Types\Portfolio( $getbenonit->routes ) );
 Benlumia007\Alembic\ContentTypes::add( 'page', new Benlumia007\Alembic\Entry\Types\Page( $getbenonit->routes ) );
 Benlumia007\Alembic\ContentTypes::registerRoutes();
-$getbenonit->routes->get( '/', Benlumia007\Alembic\Controllers\Blog::class );
-// $getbenonit->routes->get( '/', Benlumia007\Alembic\Controllers\Home::class );
+$getbenonit->routes->get( '/blog', Benlumia007\Alembic\Controllers\Blog::class );
+$getbenonit->routes->get( '/', Benlumia007\Alembic\Controllers\Home::class );
 
 if ( isset( $_GET['bust-cache'] ) ) {
 

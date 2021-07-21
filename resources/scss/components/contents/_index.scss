@@ -140,3 +140,70 @@
         }
     }
 }
+
+.site-about {
+    padding: 1rem 0;
+
+    .content-area {
+        margin: 0 auto;
+        max-width: 73.125rem;
+
+        .page {
+            background: transparent;
+            border: none;
+
+            .post-thumbnail {
+                img {
+                    height: 300px;
+                    width: 300px;
+                    box-shadow: 2px 2px 2px 2px black;
+                }
+            }
+        }
+    }
+}
+
+.site-portfolio {
+    background: #ffffff;
+    padding: 2rem 0;
+
+    .content-area {
+        margin: 0 auto;
+        max-width: 73.125rem;
+
+        .entry-header {
+            text-align: center;
+
+            .entry-title {
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .entry-content {
+            margin: 2rem 0;
+        }
+    }
+}
+
+.site-blog {
+    padding: 2rem 0;
+
+    .content-area {
+        margin: 0 auto;
+        max-width: 73.125rem;
+
+        .entry-header {
+            text-align: center;
+
+            .entry-title {
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        .entry-content {
+            margin: 2rem 0;
+        }
+    }
+}

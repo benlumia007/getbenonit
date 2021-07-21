@@ -18,11 +18,7 @@
 </section>
 <section id="portfolio" class="site-portfolio">
 	<div class="content-area">
-		<?php
-		$portfolios = new Benlumia007\Alembic\Entry\Entries(
-			new Benlumia007\Alembic\Entry\Locator(
-				Benlumia007\Alembic\ContentTypes::get( 'portfolio' )->path()
-			),
+		<?php $portfolios = new Benlumia007\Alembic\Entry\Entries( new Benlumia007\Alembic\Entry\Locator( Benlumia007\Alembic\ContentTypes::get( 'portfolio' )->path() ),
 			[
 				'order' => 'desc',
 				'number' => PHP_INT_MAX
@@ -63,7 +59,7 @@
 			),
 			[
 				'order' => 'desc',
-				'number' => PHP_INT_MAX
+				'number' => 2
 			]
 		); ?>
 		<header class="entry-header">
