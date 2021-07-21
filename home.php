@@ -50,7 +50,7 @@
 		</div>
 	</div>
 </section>
-<section id="blog" class="site-blog">
+<!-- <section id="blog" class="site-blog">
 	<div class="content-area">
 		<?php
 		$posts = new Benlumia007\Alembic\Entry\Entries(
@@ -87,6 +87,6 @@
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 <?php Benlumia007\Alembic\Engine::view( 'footer' )->display() ?>
 

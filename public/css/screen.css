@@ -146,6 +146,7 @@ h6 {
   padding: 1.125rem;
 }
 .content-area .post .entry-header {
+  margin-bottom: 2rem;
   text-align: center;
 }
 .content-area .post .entry-header .entry-title {
@@ -154,9 +155,6 @@ h6 {
 }
 .content-area .post .entry-header .entry-title a {
   text-decoration: none;
-}
-.content-area .post .entry-content {
-  margin: 2rem 0;
 }
 .content-area .page {
   background: #ffffff;
@@ -385,4 +383,8 @@ img {
 figure {
   height: auto;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
 }

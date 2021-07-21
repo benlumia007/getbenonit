@@ -23,8 +23,8 @@
 					<h2 class="categories-title">Categories</h2>
 					<?php foreach( $categories->all() as $category ) : ?>
 						<ul>
-								<li><a href="<?= $category->uri(); ?>"><?= $category->title(); ?></a></li>
-							</ul>
+							<li><a href="<?= $category->uri(); ?>"><?= $category->title(); ?></a></li>
+						</ul>
 					<?php endforeach; ?>
 				</div>
 				<div class="archives">
